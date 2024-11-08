@@ -1,0 +1,150 @@
+body {
+    background-color: #3b3b4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*background-color: #f8f8f8;  Optionnel */
+    z-index: 1000; /* S'assurer que le header est au-dessus de tout autre contenu */
+    padding: 10px 0; /* Espacement autour du titre */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optionnel */
+    text-align: center;
+}
+
+
+/*Modal CSS*/
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+}
+
+
+/*Center box*/
+
+.center-box {
+    margin-top: 80px; 
+    text-align: center;
+    background-color: #f0f0f5; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;
+}
+
+.center-box-play {
+    width: 400px; /* Ajuste cette largeur pour un cadre plus large */
+    padding: 20px;
+    background-color: #f0f0f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    text-align: center;
+
+    /*margin-top: 80px; 
+    text-align: center; 
+    background-color: #f4f4f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333;*/
+}
+
+h2 {
+    color: #003366;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #003366;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #005f99;
+}
+
+/*Styles play.php*/
+
+#game-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px;
+    margin-top: 20px;
+    border-top: 2px solid #003366;
+    padding-top: 20px;
+}
+
+.pole {
+    width: 10px;
+    background-color: #003366;
+    position: relative;
+    height: 200px;
+
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.disc {
+    position: absolute;
+    bottom: 0;
+    background-color: #6699cc; //
+    height: 20px; //
+    text-align: center; //
+    color: #fff; //
+    border-radius: 3px;
+
+    margin: 0 auto; /* Centre chaque disque autour du bâton */
+    left: 50%; /* Positionnement pour centrer le disque */
+    transform: translateX(-50%);
+}
+
+#score-box {
+    margin-top: 20px;
+}
